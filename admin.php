@@ -11,6 +11,8 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/directory.js"></script>
+		<script type="text/javascript" src="js/upload.js"></script>
 	</head>
 	<body>
 		<!-- Navbar -->
