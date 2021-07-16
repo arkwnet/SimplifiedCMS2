@@ -1,3 +1,7 @@
+.navbar-user {
+	color: #fff !important;
+}
+
 #login {
 	width: 600px;
 	margin: auto;
@@ -5,5 +9,7 @@
 }
 
 #fs {
+	width: 1000px;
+	margin: auto;
 	margin-top: 20px;
 }
