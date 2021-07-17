@@ -2,7 +2,7 @@
 	<div id="fs" class="container-fluid">
 		<div class="input-group fs-path">
 			<span class="input-group-text">パス :</span>
-			<input type="text" class="form-control" id="input_path" value="/">
+			<input type="text" class="form-control" id="input_path" value="/" placeholder="パス">
 			<button class="btn btn-outline-secondary" type="button" onclick="moveUpDirectory()">../</button>
 			<button class="btn btn-outline-secondary" type="button" onclick="moveRootDirectory()">/</button>
 			<button class="btn btn-outline-primary" type="button" onclick="moveDirectory()">移動</button>
@@ -19,9 +19,9 @@
 		<p><b>新規作成</b></p>
 		<form id="create">
 			<div class="input-group">
-				<input type="text" class="form-control" name="file" id="new_name">
-				<button class="btn btn-outline-secondary" type="button" onclick="createFile()">ファイル作成</button>
-				<button class="btn btn-outline-secondary" type="button" onclick="createDirectory()">フォルダ作成</button>
+				<input type="text" class="form-control" name="file" id="new_name" placeholder="ファイルまたはフォルダ名">
+				<button class="btn btn-outline-secondary" type="button" onclick="createData('file')">ファイル作成</button>
+				<button class="btn btn-outline-secondary" type="button" onclick="createData('directory')">フォルダ作成</button>
 			</div>
 		</form>
 		<br>
@@ -31,15 +31,15 @@
 
 	<div id="editor" class="container-fluid">
 		<div class="input-group fs-path">
-			<span class="input-group-text">パス :</span>
-			<input type="text" class="form-control" id="editor_path" disabled>
+			<span class="input-group-text">ファイルパス :</span>
+			<input type="text" class="form-control" id="editor_path" placeholder="ファイルパス" disabled>
 			<button class="btn btn-outline-primary" type="button" onclick="saveFile()">保存</button>
 		</div>
 		<br>
 		<p><b>指定したURLからコピー :</b></p>
 		<form id="upload">
 			<div class="input-group">
-				<input type="text" class="form-control" id="online_url">
+				<input type="text" class="form-control" id="online_url" placeholder="URL">
 				<button class="btn btn-outline-secondary" type="button" onclick="loadOnlineFile()">コピー</button>
 			</div>
 		</form>

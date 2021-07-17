@@ -9,6 +9,7 @@ function moveDirectory() {
 		inputPath = inputPath + "/";
 	}
 	$("#input_path").val(inputPath);
+	crearEditor();
 	getFileList(inputPath);
 }
 
@@ -57,10 +58,10 @@ function getFileList(path) {
 	});
 }
 
-function createFile() {
+function createData(mode) {
 	$.ajax({
 		type: "POST",
-		url: "backend/create.php?type=file",
+		url: "backend/create.php?type=" + mode,
 		data: {
 			"path": ".." + dir + $("#new_name").val()
 		},
@@ -77,22 +78,31 @@ function createFile() {
 	});
 }
 
-function createDirectory() {
-	$.ajax({
-		type: "POST",
-		url: "backend/create.php?type=directory",
-		data: {
-			"path": ".." + dir + $("#new_name").val()
-		},
-		cache: false,
-		success: function(data, dataType){
-			reloadDirectory();
-			if (data == "EXIST") {
-				alert(existMessage);
-			}
-			$("#new_name").val("");
-		},error: function(XMLHttpRequest, textStatus, errorThrown){
-			alert(errorMessage);
+function deleteData(path, mode) {
+	let modeText;
+	if (mode == "file") { modeText = "ファイル"; }
+	if (mode == "directory") { modeText = "フォルダ"; }
+	if (window.confirm(modeText + " " + path + " を削除します。よろしいですか?") == true) {
+		if (dir + path == $("#editor_path").val()) {
+			crearEditor();
 		}
-	});
+		$("#file_list").html("削除中。しばらくお待ち下さい...")
+		$.ajax({
+			type: "POST",
+			url: "backend/delete.php?type=" + mode,
+			data: {
+				"path": ".." + dir + path
+			},
+			cache: false,
+			success: function(data, dataType){
+				reloadDirectory();
+				if (data == "EXIST") {
+					alert(existMessage);
+				}
+				$("#new_name").val("");
+			},error: function(XMLHttpRequest, textStatus, errorThrown){
+				alert(errorMessage);
+			}
+		});
+	}
 }

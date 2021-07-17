@@ -1,7 +1,7 @@
 function upload() {
 	const formData = new FormData($("#upload").get(0));
 	$("#file_name").prop("disabled", true);
-	$("#file_list").html("アップロード中。しばらくお待ち下さい...")
+	$("#file_list").html("アップロード中。しばらくお待ち下さい...");
 	const path = encodeURIComponent($("#input_path").val());
 	$.ajax({
 		type: "POST",

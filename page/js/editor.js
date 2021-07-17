@@ -56,3 +56,8 @@ function saveFile() {
 		}
 	});
 }
+
+function crearEditor() {
+	$("#editor_path").val("");
+	$("#editor_box").val("");
+}

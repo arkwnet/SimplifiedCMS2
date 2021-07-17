@@ -14,6 +14,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && strtolower($_SERVER["HTTP_X_REQU
 					echo createField("ディレクトリ");
 					echo createFieldWithLink($fileName, "directoryLinkEvent('" . $fileName . "')");
 					echo createField("");
+					echo createFieldWithLink("削除", "deleteData('" . $fileName . "', 'directory')");
 					echo "</tr>";
 				}
 				if ($i == 1 && is_file($fileList[$j]) == true) {
@@ -21,6 +22,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && strtolower($_SERVER["HTTP_X_REQU
 					echo createField("ファイル");
 					echo createFieldWithLink($fileName, "loadFile('" . $fileName . "')");
 					echo createField(filesize($fileList[$j]));
+					echo createFieldWithLink("削除", "deleteData('" . $fileName . "', 'file')");
 					echo "</tr>";
 				}
 			}
