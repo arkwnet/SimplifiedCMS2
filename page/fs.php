@@ -21,6 +21,20 @@
 	</div>
 
 	<div id="editor" class="container-fluid">
+		<div class="input-group fs-path">
+			<span class="input-group-text">パス :</span>
+			<input type="text" class="form-control" id="editor_path" disabled>
+			<button class="btn btn-outline-primary" type="button" onclick="saveFile()">保存</button>
+		</div>
+		<br>
+		<p><b>指定したURLからコピー :</b></p>
+		<form id="upload">
+			<div class="input-group">
+				<input type="text" class="form-control" id="online_url">
+				<button class="btn btn-outline-secondary" type="button" onclick="loadOnlineFile()">コピー</button>
+			</div>
+		</form>
+		<br>
 		<div class="input-group">
 			<textarea class="form-control" id="editor_box"></textarea>
 		</div>

@@ -40,7 +40,7 @@ function directoryLinkEvent(dir) {
 }
 
 function getFileList(path) {
-	$("#file_list").html("読み込み中。しばらくお待ち下さい...");
+	$("#file_list").html(loadMessage);
 	dir = $("#input_path").val();
 	$.ajax({
 		type: "POST",
