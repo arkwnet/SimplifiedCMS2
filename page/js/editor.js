@@ -35,5 +35,24 @@ function loadOnlineFile() {
 }
 
 function saveFile() {
-	//
+	const savePath = ".." + $("#editor_path").val();
+	$.ajax({
+		type: "POST",
+		url: "backend/saveFile.php",
+		data: {
+			"path": savePath,
+			"data": $("#editor_box").val()
+		},
+		cache: false,
+		success: function(data, dataType){
+			reloadDirectory();
+			if (data == "NG") {
+				alert(errorMessage);
+			} else {
+				alert("ファイルを保存しました。");
+			}
+		},error: function(XMLHttpRequest, textStatus, errorThrown){
+			alert(errorMessage);
+		}
+	});
 }

@@ -16,6 +16,15 @@
 			</div>
 		</form>
 		<br>
+		<p><b>新規作成</b></p>
+		<form id="create">
+			<div class="input-group">
+				<input type="text" class="form-control" name="file" id="new_name">
+				<button class="btn btn-outline-secondary" type="button" onclick="createFile()">ファイル作成</button>
+				<button class="btn btn-outline-secondary" type="button" onclick="createDirectory()">フォルダ作成</button>
+			</div>
+		</form>
+		<br>
 		<table class="table" id="file_list">
 		</table>
 	</div>

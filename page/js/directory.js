@@ -56,3 +56,43 @@ function getFileList(path) {
 		}
 	});
 }
+
+function createFile() {
+	$.ajax({
+		type: "POST",
+		url: "backend/create.php?type=file",
+		data: {
+			"path": ".." + dir + $("#new_name").val()
+		},
+		cache: false,
+		success: function(data, dataType){
+			reloadDirectory();
+			if (data == "EXIST") {
+				alert(existMessage);
+			}
+			$("#new_name").val("");
+		},error: function(XMLHttpRequest, textStatus, errorThrown){
+			alert(errorMessage);
+		}
+	});
+}
+
+function createDirectory() {
+	$.ajax({
+		type: "POST",
+		url: "backend/create.php?type=directory",
+		data: {
+			"path": ".." + dir + $("#new_name").val()
+		},
+		cache: false,
+		success: function(data, dataType){
+			reloadDirectory();
+			if (data == "EXIST") {
+				alert(existMessage);
+			}
+			$("#new_name").val("");
+		},error: function(XMLHttpRequest, textStatus, errorThrown){
+			alert(errorMessage);
+		}
+	});
+}

@@ -6,14 +6,14 @@
 	<head>
 		<title>Simplified CMS 2</title>
 		<meta charse="utf-8">
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/admin.css">
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/directory.js"></script>
-		<script type="text/javascript" src="js/upload.js"></script>
-		<script type="text/javascript" src="js/editor.js"></script>
+		<link type="text/css" rel="stylesheet" href="page/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="page/css/admin.css">
+		<script type="text/javascript" src="page/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="page/js/jquery.js"></script>
+		<script type="text/javascript" src="page/js/main.js"></script>
+		<script type="text/javascript" src="page/js/directory.js"></script>
+		<script type="text/javascript" src="page/js/upload.js"></script>
+		<script type="text/javascript" src="page/js/editor.js"></script>
 	</head>
 	<body>
 		<!-- Navbar -->
