@@ -1,3 +1,5 @@
+let dir = "";
+
 function moveDirectory() {
 	let inputPath = $("#input_path").val();
 	if (inputPath.substr(0, 1) != "/") {
@@ -39,6 +41,7 @@ function directoryLinkEvent(dir) {
 
 function getFileList(path) {
 	$("#file_list").html("読み込み中。しばらくお待ち下さい...");
+	dir = $("#input_path").val();
 	$.ajax({
 		type: "POST",
 		url: "backend/getFileList.php",

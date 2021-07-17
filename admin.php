@@ -13,6 +13,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/directory.js"></script>
 		<script type="text/javascript" src="js/upload.js"></script>
+		<script type="text/javascript" src="js/editor.js"></script>
 	</head>
 	<body>
 		<!-- Navbar -->

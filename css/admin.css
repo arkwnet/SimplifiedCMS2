@@ -8,8 +8,25 @@
 	margin-top: 30px;
 }
 
-#fs {
-	width: 1000px;
+#main {
+	overflow: hidden;
+}
+
+#fs, #editor {
 	margin: auto;
 	margin-top: 20px;
+}
+
+#fs {
+	width: 30%;
+	float: left;
+}
+
+#editor {
+	width: 70%;
+	float: right;
+}
+
+#editor_box {
+	height: 100%;
 }

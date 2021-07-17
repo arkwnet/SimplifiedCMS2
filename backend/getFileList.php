@@ -19,7 +19,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && strtolower($_SERVER["HTTP_X_REQU
 				if ($i == 1 && is_file($fileList[$j]) == true) {
 					echo "<tr>";
 					echo createField("ファイル");
-					echo createField($fileName);
+					echo createFieldWithLink($fileName, "openFile('" . $fileName . "')");
 					echo createField(filesize($fileList[$j]));
 					echo "</tr>";
 				}
