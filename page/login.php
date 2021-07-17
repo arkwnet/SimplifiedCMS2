@@ -1,6 +1,6 @@
 <div id="login" class="container-fluid">
 	<h2>ログイン</h2><br>
-	<form action="backend/login.php" method="post">
+	<form action="login.php" method="post">
 		<label for="user-id" class="form-label">ユーザーID</label>
 		<div class="input-group mb-3">
 			<input type="text" class="form-control" id="user-id" name="user-id">

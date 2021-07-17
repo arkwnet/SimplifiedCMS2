@@ -1,5 +1,4 @@
 <?php
-$user = [
-	"admin" => "ShizuokaUniv",
-	"arakawa" => "HamamatsuCampus"
-];
+
+// ユーザ一覧ファイルのパス
+$userPath = "./user.php";
