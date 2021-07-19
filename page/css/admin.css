@@ -30,3 +30,9 @@
 #editor_box {
 	height: 400px;
 }
+
+#version {
+	width: 1000px;
+	margin: auto;
+	margin-top: 30px;
+}
