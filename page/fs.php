@@ -7,16 +7,14 @@
 			<button class="btn btn-outline-secondary" type="button" onclick="moveRootDirectory()">/</button>
 			<button class="btn btn-outline-primary" type="button" onclick="moveDirectory()">移動</button>
 		</div>
-		<br>
-		<p><b>ファイルをアップロード</b></p>
+		<div class="fs-heading">ファイルをアップロード</div>
 		<form id="upload">
 			<div class="input-group">
 				<input type="file" class="form-control" name="file" id="file_name">
 				<button class="btn btn-outline-secondary" type="button" onclick="upload()">アップロード</button>
 			</div>
 		</form>
-		<br>
-		<p><b>新規作成</b></p>
+		<div class="fs-heading">新規作成</div>
 		<form id="create">
 			<div class="input-group">
 				<input type="text" class="form-control" name="file" id="new_name" placeholder="ファイルまたはフォルダ名">
@@ -35,8 +33,7 @@
 			<input type="text" class="form-control" id="editor_path" placeholder="ファイルパス" disabled>
 			<button class="btn btn-outline-primary" type="button" onclick="saveFile()">保存</button>
 		</div>
-		<br>
-		<p><b>指定したURLからコピー :</b></p>
+		<div class="fs-heading">指定したURLからコピー :</div>
 		<form id="upload">
 			<div class="input-group">
 				<input type="text" class="form-control" id="online_url" placeholder="URL">
