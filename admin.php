@@ -5,7 +5,8 @@
 <html>
 	<head>
 		<title>Simplified CMS 2</title>
-		<meta charse="utf-8">
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow">
 		<link type="text/css" rel="stylesheet" href="page/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="page/css/admin.css">
 		<script type="text/javascript" src="page/js/bootstrap.min.js"></script>
