@@ -1,7 +1,7 @@
 <?php
 $excludeFileList = array(
 	"backend",
-	"page",
+	"cmsdata",
 	"admin.php",
 	"config.php",
 	"login.php",

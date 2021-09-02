@@ -1,4 +1,7 @@
 <?php
+/*
+Simplified CMS 2 設定ファイル
+*/
 
-// ユーザ一覧ファイルのパス
+// ユーザ情報定義ファイルのパス
 $userPath = "./user.php";

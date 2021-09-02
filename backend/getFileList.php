@@ -2,7 +2,7 @@
 if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && strtolower($_SERVER["HTTP_X_REQUESTED_WITH"]) == "xmlhttprequest" && $_SERVER["REQUEST_METHOD"] === "POST") {
 	include_once("excludeFileList.php");
 	$fileList = glob("../" . $_POST["path"] . "*");
-	echo file_get_contents("../page/tableHeader.html");
+	echo file_get_contents("../cmsdata/tableHeader.html");
 	echo "<tbody>";
 	$i = 0;
 	for ($i = 0; $i < 2; $i++) {

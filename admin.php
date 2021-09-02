@@ -7,14 +7,14 @@
 		<title>Simplified CMS 2</title>
 		<meta charset="utf-8">
 		<meta name="robots" content="noindex, nofollow">
-		<link type="text/css" rel="stylesheet" href="page/css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="page/css/admin.css">
-		<script type="text/javascript" src="page/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="page/js/jquery.js"></script>
-		<script type="text/javascript" src="page/js/main.js"></script>
-		<script type="text/javascript" src="page/js/directory.js"></script>
-		<script type="text/javascript" src="page/js/upload.js"></script>
-		<script type="text/javascript" src="page/js/editor.js"></script>
+		<link type="text/css" rel="stylesheet" href="cmsdata/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="cmsdata/css/admin.css">
+		<script type="text/javascript" src="cmsdata/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="cmsdata/js/jquery.js"></script>
+		<script type="text/javascript" src="cmsdata/js/main.js"></script>
+		<script type="text/javascript" src="cmsdata/js/directory.js"></script>
+		<script type="text/javascript" src="cmsdata/js/upload.js"></script>
+		<script type="text/javascript" src="cmsdata/js/editor.js"></script>
 	</head>
 	<body>
 		<!-- Navbar -->

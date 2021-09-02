@@ -8,7 +8,7 @@ if ($_SESSION["id"] == "") {
 	if ($id == "") {
 		$id = "fs";
 	}
-	$navbar = file_get_contents("page/navbar.php");
+	$navbar = file_get_contents("cmsdata/navbar.php");
 	$navbar = str_replace("[UserID]", $_SESSION["id"], $navbar);
 	if ($id == "fs") {
 		$navbar = str_replace("[FSActive]", " active", $navbar);
@@ -19,4 +19,4 @@ if ($_SESSION["id"] == "") {
 		$navbar = str_replace("[VersionActive]", " active", $navbar);
 	}
 }
-$output = file_get_contents("page/".$id.".php");
+$output = file_get_contents("cmsdata/".$id.".php");
